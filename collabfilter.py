@@ -7,7 +7,7 @@ import torch.nn as nn
 import torch.optim as optim
 from torch.autograd import Variable
 
-from utils import get_minibatch, evaluate
+from utils import get_minibatch, evaluate, evaluate_all
 from bases import Base, DrugDecoder, ExpEncoder, CLR, OneCycle
 
 __author__ = "Yifeng Tao"
@@ -70,6 +70,11 @@ class CF(Base):
 
     self.repository = args['repository']
 
+    # Ablation Variables
+    self.test_gene_mask = args['test_gene_mask']
+    
+    self.mask_num_genes = args['mask_num_genes']
+
 
   def build(self, ptw_ids):
     """ Define modules of the model.
@@ -82,7 +87,8 @@ class CF(Base):
         embedding_dim=self.embedding_dim, use_attention=self.use_attention,
         attention_size=self.attention_size, attention_head=self.attention_head,
         init_gene_emb=self.init_gene_emb, use_cntx_attn=self.use_cntx_attn, ptw_ids=self.ptw_ids,
-        use_hid_lyr=self.use_hid_lyr, use_relu=self.use_relu, repository=self.repository)
+        use_hid_lyr=self.use_hid_lyr, use_relu=self.use_relu, repository=self.repository,
+        test_gene_mask=self.test_gene_mask, mask_num_genes=self.mask_num_genes)
 
     self.decoder = DrugDecoder(
         self.embedding_dim, self.drg_size)
@@ -161,7 +167,6 @@ class CF(Base):
 
     record_epoch = 0
     for iter_train in range(0, max_iter+1, batch_size):
-      print("Starting epoch:", iter_train)
       if iter_train // len(self.rng_train) != record_epoch:
         record_epoch = iter_train // len(self.rng_train)
         random.shuffle(self.rng_train)
@@ -212,29 +217,25 @@ class CF(Base):
         msks_train = np.concatenate(msks_train,axis=0)
         prds_train = np.concatenate(prds_train,axis=0)
 
-        precision_train, recall_train, f1score_train, accuracy_train, auc_train = evaluate(
+        precision_train, recall_train, f1score_train, accuracy_train, auc_roc_train, auc_pr_train = evaluate_all(
             tgts_train, msks_train, prds_train, epsilon=self.epsilon)
 
         tgts, msks, prds, _, _ = self.test(test_set, test_batch_size)
 
-        precision, recall, f1score, accuracy, auc = evaluate(tgts, msks, prds, epsilon=self.epsilon)
+        precision, recall, f1score, accuracy, auc_roc, auc_pr = evaluate_all(tgts, msks, prds, epsilon=self.epsilon)
 
-        print("[%d,%d] | tst f1:%.1f, auc:%.1f | trn f1:%.1f, auc:%.1f, loss:%.3f"%( iter_train//len(self.rng_train),
-              iter_train%len(self.rng_train), 100.0*f1score, 100.0*auc, 100.0*f1score_train, 100.0*auc_train,
-              np.mean(losses)))
+        print("Epoch %d | tst f1:%.1f, accuracy:%.1f, aupr: %.1f, auroc:%.1f | trn f1:%.1f, accuracy:%.1f, aupr: %.1f, auroc:%.1f , loss:%.3f"%( iter_train, 100.0*f1score, 100.0*accuracy, 100.0*auc_pr, 100.0*auc_roc, 100.0*f1score_train, 100.0*accuracy_train, 100.0*auc_pr_train, 100.0*auc_roc_train, np.mean(losses)))
 
         logs["iter"].append(iter_train)
         logs["precision"].append(precision)
         logs["recall"].append(recall)
         logs["f1score"].append(f1score)
         logs["accuracy"].append(accuracy)
-        logs["auc"].append(auc)
 
         logs["precision_train"].append(precision_train)
         logs["recall_train"].append(recall_train)
         logs["f1score_train"].append(f1score_train)
         logs["accuracy_train"].append(accuracy_train)
-        logs["auc_train"].append(auc_train)
 
         logs['loss'].append(np.mean(losses))
 

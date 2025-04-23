@@ -14,6 +14,7 @@ To execute the research paper on GCB (Google Collab), perform the following step
 <br/>**Note**: The start of your path will contain "/content/drive/MyDrive/". Add the rest of the path that points to where your downloaded repository is.
 4. Open the "Project_Code.ipynb" file and execute the instructions listed. 
 <br/>**Note**: Be sure to change the runtime to the T4 GPU in order for resources not to be maxed. Consider paying for premium GPUs if you would like to test larger hyperparameters.
+5. If you would like to change any parameters, open run_cf.py and change the hyperparameters listed in the args dictionary.
 
 ## Data Download Instructions
 

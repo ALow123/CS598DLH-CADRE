@@ -205,7 +205,7 @@ class ExpEncoder(nn.Module):
       self, omc_size, hidden_dim, dropout_rate=0.5, embedding_dim=512,
       use_attention=True, attention_size=400, attention_head=8, init_gene_emb=True,
       use_cntx_attn=True, ptw_ids=None, use_hid_lyr=False, use_relu=False,
-      repository='gdsc'):
+      repository='gdsc', test_gene_mask=False, mask_num_genes=100):
 
     """
     Parameters
@@ -225,6 +225,9 @@ class ExpEncoder(nn.Module):
     self.use_hid_lyr = use_hid_lyr
     self.use_relu = use_relu
     self.repository = repository
+    self.test_gene_mask = test_gene_mask
+    self.mask_num_genes = mask_num_genes
+
 
     if init_gene_emb:
       if self.repository == 'gdsc':
@@ -287,6 +290,14 @@ class ExpEncoder(nn.Module):
 
     E_t = self.layer_emb(omc_idx) #(batch_size, num_omc, embedding_dim)
 
+    if self.test_gene_mask:
+      # Find number of gene expression
+      temp_batch_size, temp_num_omc, dummy_var = E_t.shape 
+      # Get a random subset of column indicies (gene embeddings) to zero out 
+      temp_col_indicies = torch.randperm(temp_num_omc)[:self.mask_num_genes]
+      # Based on above column indicies, zero out the embedding
+      # All samples in the batch have the same column's zeroed out for consistency
+      E_t[:, temp_col_indicies, :] = 0
 
     if self.use_attention:
 

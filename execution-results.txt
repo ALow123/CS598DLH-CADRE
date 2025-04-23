@@ -1,0 +1,452 @@
+Loading drug dataset...
+Hyperparameters:
+{'is_train': True, 'input_dir': '/content/drive/MyDrive/CS598_DL4H_Project/CADRE-master/data/input', 'output_dir': '/content/drive/MyDrive/CS598_DL4H_Project/CADRE-master/data/output', 'repository': 'gdsc', 'drug_id': -1, 'use_cuda': True, 'use_relu': False, 'omic': 'exp', 'embedding_dim': 200, 'attention_size': 128, 'attention_head': 8, 'hidden_dim_enc': 200, 'use_hid_lyr': False, 'max_iter': 1025, 'weight_decay': 0.0003, 'batch_size': 8, 'test_batch_size': 8, 'test_inc_size': 128, 'model_label': 'CF', 'exp_size': 3000, 'mut_size': 1000, 'cnv_size': 1000, 'omc_size': 3000, 'drg_size': 260, 'train_size': 676, 'test_size': 170}
+Running for Collaborative Filtering with dropout: 0.4 and learning rate: 0.1
+Training...
+Epoch 0 | tst f1:40.7, accuracy:51.0, aupr: 35.4, auroc:51.2 | trn f1:37.9, accuracy:51.6, aupr: 30.5, auroc:51.6 , loss:0.908
+Epoch 128 | tst f1:40.3, accuracy:50.8, aupr: 35.0, auroc:50.7 | trn f1:38.8, accuracy:50.5, aupr: 33.0, auroc:50.4 , loss:0.931
+Epoch 256 | tst f1:40.8, accuracy:51.3, aupr: 35.4, auroc:51.2 | trn f1:38.7, accuracy:51.3, aupr: 32.1, auroc:51.2 , loss:0.916
+Epoch 384 | tst f1:41.0, accuracy:51.6, aupr: 35.8, auroc:51.6 | trn f1:37.7, accuracy:51.5, aupr: 31.4, auroc:51.7 , loss:0.907
+Epoch 512 | tst f1:41.5, accuracy:52.1, aupr: 36.4, auroc:52.3 | trn f1:39.3, accuracy:51.0, aupr: 34.3, auroc:51.3 , loss:0.903
+Epoch 640 | tst f1:41.2, accuracy:52.0, aupr: 36.3, auroc:51.9 | trn f1:39.0, accuracy:52.3, aupr: 33.3, auroc:52.9 , loss:0.879
+Epoch 768 | tst f1:41.0, accuracy:52.2, aupr: 36.4, auroc:52.2 | trn f1:38.3, accuracy:52.3, aupr: 32.0, auroc:53.1 , loss:0.874
+Epoch 896 | tst f1:41.6, accuracy:52.6, aupr: 36.6, auroc:52.6 | trn f1:38.7, accuracy:52.6, aupr: 32.9, auroc:52.8 , loss:0.871
+Epoch 1024 | tst f1:41.7, accuracy:52.8, aupr: 37.0, auroc:52.9 | trn f1:39.1, accuracy:52.8, aupr: 33.4, auroc:53.0 , loss:0.869
+Running for Collaborative Filtering with dropout: 0.4 and learning rate: 0.3
+Training...
+Epoch 0 | tst f1:39.5, accuracy:49.3, aupr: 33.1, auroc:48.6 | trn f1:30.6, accuracy:49.9, aupr: 21.6, auroc:49.3 , loss:0.960
+Epoch 128 | tst f1:39.7, accuracy:49.7, aupr: 33.4, auroc:49.0 | trn f1:38.4, accuracy:50.6, aupr: 30.7, auroc:49.8 , loss:0.937
+Epoch 256 | tst f1:39.7, accuracy:50.2, aupr: 33.6, auroc:49.7 | trn f1:37.3, accuracy:50.0, aupr: 29.8, auroc:49.2 , loss:0.937
+Epoch 384 | tst f1:40.8, accuracy:51.6, aupr: 34.5, auroc:50.9 | trn f1:38.0, accuracy:51.7, aupr: 30.0, auroc:51.4 , loss:0.896
+Epoch 512 | tst f1:40.5, accuracy:52.2, aupr: 35.2, auroc:51.8 | trn f1:38.6, accuracy:52.6, aupr: 31.1, auroc:52.1 , loss:0.873
+Epoch 640 | tst f1:41.4, accuracy:53.1, aupr: 35.9, auroc:52.7 | trn f1:39.6, accuracy:53.1, aupr: 33.3, auroc:52.8 , loss:0.847
+Epoch 768 | tst f1:41.7, accuracy:53.7, aupr: 36.5, auroc:53.6 | trn f1:41.4, accuracy:54.9, aupr: 34.8, auroc:55.3 , loss:0.816
+Epoch 896 | tst f1:42.1, accuracy:54.2, aupr: 36.7, auroc:53.9 | trn f1:40.3, accuracy:55.0, aupr: 33.8, auroc:55.3 , loss:0.809
+Epoch 1024 | tst f1:42.5, accuracy:54.8, aupr: 37.2, auroc:54.5 | trn f1:40.1, accuracy:55.9, aupr: 33.0, auroc:55.9 , loss:0.795
+Running for Collaborative Filtering with dropout: 0.4 and learning rate: 0.5
+Training...
+Epoch 0 | tst f1:39.3, accuracy:48.7, aupr: 32.0, auroc:48.1 | trn f1:34.9, accuracy:48.1, aupr: 27.6, auroc:46.7 , loss:1.010
+Epoch 128 | tst f1:39.6, accuracy:49.3, aupr: 32.2, auroc:48.6 | trn f1:36.2, accuracy:48.4, aupr: 28.0, auroc:48.0 , loss:0.996
+Epoch 256 | tst f1:40.2, accuracy:50.4, aupr: 33.2, auroc:50.0 | trn f1:37.7, accuracy:50.1, aupr: 28.9, auroc:49.6 , loss:0.958
+Epoch 384 | tst f1:41.1, accuracy:52.2, aupr: 34.3, auroc:51.8 | trn f1:41.6, accuracy:50.8, aupr: 34.9, auroc:50.8 , loss:0.918
+Epoch 512 | tst f1:41.8, accuracy:53.3, aupr: 35.5, auroc:53.3 | trn f1:38.3, accuracy:53.7, aupr: 29.5, auroc:53.6 , loss:0.861
+Epoch 640 | tst f1:42.9, accuracy:54.7, aupr: 36.9, auroc:55.0 | trn f1:40.0, accuracy:55.2, aupr: 31.6, auroc:55.4 , loss:0.820
+Epoch 768 | tst f1:44.1, accuracy:56.5, aupr: 38.1, auroc:56.5 | trn f1:42.8, accuracy:56.7, aupr: 35.7, auroc:57.8 , loss:0.783
+Epoch 896 | tst f1:44.5, accuracy:57.1, aupr: 38.9, auroc:57.3 | trn f1:41.6, accuracy:57.3, aupr: 34.5, auroc:58.5 , loss:0.766
+Epoch 1024 | tst f1:44.2, accuracy:57.1, aupr: 39.2, auroc:57.4 | trn f1:43.5, accuracy:58.1, aupr: 36.4, auroc:59.3 , loss:0.756
+Running for Collaborative Filtering with dropout: 0.6 and learning rate: 0.1
+Training...
+Epoch 0 | tst f1:39.4, accuracy:49.2, aupr: 33.3, auroc:48.9 | trn f1:39.8, accuracy:48.3, aupr: 34.2, auroc:47.1 , loss:1.087
+Epoch 128 | tst f1:39.3, accuracy:49.3, aupr: 33.3, auroc:48.9 | trn f1:36.6, accuracy:48.9, aupr: 29.8, auroc:48.4 , loss:1.047
+Epoch 256 | tst f1:39.6, accuracy:49.8, aupr: 33.6, auroc:49.4 | trn f1:35.8, accuracy:49.0, aupr: 28.8, auroc:48.3 , loss:1.047
+Epoch 384 | tst f1:39.8, accuracy:49.8, aupr: 33.6, auroc:49.5 | trn f1:37.1, accuracy:50.0, aupr: 30.4, auroc:49.4 , loss:1.024
+Epoch 512 | tst f1:39.8, accuracy:50.2, aupr: 34.1, auroc:49.8 | trn f1:36.7, accuracy:49.7, aupr: 30.5, auroc:49.1 , loss:1.018
+Epoch 640 | tst f1:39.7, accuracy:50.3, aupr: 33.8, auroc:49.9 | trn f1:36.4, accuracy:50.4, aupr: 29.4, auroc:49.7 , loss:1.011
+Epoch 768 | tst f1:40.0, accuracy:50.7, aupr: 34.2, auroc:50.3 | trn f1:37.8, accuracy:50.7, aupr: 31.1, auroc:50.1 , loss:0.998
+Epoch 896 | tst f1:40.4, accuracy:50.9, aupr: 34.2, auroc:50.4 | trn f1:36.5, accuracy:50.3, aupr: 30.2, auroc:49.4 , loss:1.003
+Epoch 1024 | tst f1:40.3, accuracy:50.7, aupr: 34.7, auroc:50.9 | trn f1:36.5, accuracy:50.8, aupr: 30.1, auroc:50.0 , loss:0.992
+Running for Collaborative Filtering with dropout: 0.6 and learning rate: 0.3
+Training...
+Epoch 0 | tst f1:40.0, accuracy:51.4, aupr: 33.5, auroc:50.6 | trn f1:34.8, accuracy:51.6, aupr: 27.6, auroc:50.4 , loss:1.019
+Epoch 128 | tst f1:39.9, accuracy:51.4, aupr: 33.5, auroc:50.4 | trn f1:38.4, accuracy:50.6, aupr: 31.3, auroc:49.7 , loss:1.031
+Epoch 256 | tst f1:40.7, accuracy:52.4, aupr: 34.3, auroc:51.7 | trn f1:37.2, accuracy:51.0, aupr: 29.9, auroc:50.3 , loss:1.013
+Epoch 384 | tst f1:40.2, accuracy:52.2, aupr: 34.6, auroc:51.6 | trn f1:37.2, accuracy:52.1, aupr: 29.7, auroc:50.9 , loss:0.982
+Epoch 512 | tst f1:40.9, accuracy:53.2, aupr: 35.0, auroc:52.4 | trn f1:38.0, accuracy:52.6, aupr: 31.0, auroc:52.1 , loss:0.955
+Epoch 640 | tst f1:41.7, accuracy:54.1, aupr: 36.0, auroc:53.7 | trn f1:39.2, accuracy:53.9, aupr: 32.3, auroc:53.7 , loss:0.921
+Epoch 768 | tst f1:42.3, accuracy:54.8, aupr: 36.6, auroc:54.7 | trn f1:40.4, accuracy:54.5, aupr: 33.6, auroc:54.5 , loss:0.900
+Epoch 896 | tst f1:41.8, accuracy:54.7, aupr: 36.5, auroc:54.5 | trn f1:41.1, accuracy:55.0, aupr: 34.7, auroc:54.8 , loss:0.892
+Epoch 1024 | tst f1:42.1, accuracy:54.8, aupr: 36.6, auroc:54.5 | trn f1:39.4, accuracy:55.4, aupr: 32.2, auroc:55.1 , loss:0.881
+Running for Collaborative Filtering with dropout: 0.6 and learning rate: 0.5
+Training...
+Epoch 0 | tst f1:40.7, accuracy:50.1, aupr: 35.0, auroc:50.5 | trn f1:36.8, accuracy:51.6, aupr: 30.9, auroc:52.9 , loss:0.996
+Epoch 128 | tst f1:40.9, accuracy:50.4, aupr: 35.4, auroc:50.7 | trn f1:39.3, accuracy:50.3, aupr: 32.4, auroc:51.3 , loss:1.030
+Epoch 256 | tst f1:42.2, accuracy:51.9, aupr: 36.6, auroc:52.3 | trn f1:38.8, accuracy:51.1, aupr: 32.3, auroc:52.1 , loss:0.996
+Epoch 384 | tst f1:42.2, accuracy:52.5, aupr: 37.5, auroc:53.1 | trn f1:41.3, accuracy:52.4, aupr: 35.8, auroc:53.3 , loss:0.956
+Epoch 512 | tst f1:42.6, accuracy:53.6, aupr: 38.6, auroc:54.6 | trn f1:40.7, accuracy:54.0, aupr: 34.7, auroc:55.4 , loss:0.909
+Epoch 640 | tst f1:43.2, accuracy:54.7, aupr: 39.4, auroc:55.6 | trn f1:41.0, accuracy:55.5, aupr: 36.6, auroc:57.0 , loss:0.860
+Epoch 768 | tst f1:44.1, accuracy:55.9, aupr: 40.8, auroc:56.9 | trn f1:42.7, accuracy:56.7, aupr: 37.7, auroc:57.7 , loss:0.839
+Epoch 896 | tst f1:44.2, accuracy:56.4, aupr: 40.9, auroc:57.1 | trn f1:43.1, accuracy:57.2, aupr: 39.0, auroc:58.7 , loss:0.818
+Epoch 1024 | tst f1:44.3, accuracy:56.6, aupr: 41.1, auroc:57.6 | trn f1:42.0, accuracy:57.3, aupr: 37.7, auroc:58.7 , loss:0.814
+Running for Collaborative Filtering with dropout: 0.8 and learning rate: 0.1
+Training...
+Epoch 0 | tst f1:40.0, accuracy:50.8, aupr: 33.9, auroc:50.3 | trn f1:37.3, accuracy:49.5, aupr: 30.4, auroc:47.5 , loss:1.324
+Epoch 128 | tst f1:40.4, accuracy:51.1, aupr: 34.6, auroc:51.0 | trn f1:37.7, accuracy:50.9, aupr: 30.5, auroc:50.4 , loss:1.261
+Epoch 256 | tst f1:40.1, accuracy:50.9, aupr: 34.0, auroc:50.6 | trn f1:39.2, accuracy:51.8, aupr: 31.7, auroc:51.4 , loss:1.248
+Epoch 384 | tst f1:40.2, accuracy:51.1, aupr: 34.4, auroc:50.9 | trn f1:37.4, accuracy:51.3, aupr: 30.1, auroc:50.8 , loss:1.241
+Epoch 512 | tst f1:40.7, accuracy:51.5, aupr: 34.7, auroc:51.3 | trn f1:38.5, accuracy:51.5, aupr: 31.2, auroc:51.6 , loss:1.230
+Epoch 640 | tst f1:40.2, accuracy:51.3, aupr: 34.2, auroc:51.0 | trn f1:37.9, accuracy:51.6, aupr: 31.0, auroc:51.5 , loss:1.211
+Epoch 768 | tst f1:40.6, accuracy:51.7, aupr: 34.8, auroc:51.3 | trn f1:39.4, accuracy:52.1, aupr: 32.0, auroc:52.0 , loss:1.216
+Epoch 896 | tst f1:40.6, accuracy:51.6, aupr: 34.7, auroc:51.4 | trn f1:39.0, accuracy:52.1, aupr: 32.1, auroc:51.6 , loss:1.209
+Epoch 1024 | tst f1:40.3, accuracy:51.3, aupr: 34.6, auroc:51.2 | trn f1:39.2, accuracy:52.0, aupr: 32.2, auroc:52.3 , loss:1.194
+Running for Collaborative Filtering with dropout: 0.8 and learning rate: 0.3
+Training...
+Epoch 0 | tst f1:41.0, accuracy:50.0, aupr: 34.0, auroc:50.4 | trn f1:46.9, accuracy:49.1, aupr: 42.9, auroc:48.5 , loss:1.317
+Epoch 128 | tst f1:40.9, accuracy:50.2, aupr: 34.0, auroc:50.7 | trn f1:38.3, accuracy:50.1, aupr: 30.2, auroc:50.4 , loss:1.284
+Epoch 256 | tst f1:41.8, accuracy:51.1, aupr: 34.8, auroc:51.7 | trn f1:38.7, accuracy:50.7, aupr: 30.6, auroc:51.3 , loss:1.267
+Epoch 384 | tst f1:41.2, accuracy:50.8, aupr: 34.5, auroc:51.2 | trn f1:39.4, accuracy:51.2, aupr: 31.5, auroc:52.0 , loss:1.227
+Epoch 512 | tst f1:42.2, accuracy:52.2, aupr: 35.5, auroc:52.8 | trn f1:39.7, accuracy:51.5, aupr: 32.0, auroc:52.3 , loss:1.205
+Epoch 640 | tst f1:41.8, accuracy:51.8, aupr: 35.3, auroc:52.4 | trn f1:39.0, accuracy:51.8, aupr: 31.2, auroc:52.5 , loss:1.185
+Epoch 768 | tst f1:42.2, accuracy:52.4, aupr: 36.1, auroc:53.0 | trn f1:40.6, accuracy:52.8, aupr: 33.7, auroc:53.6 , loss:1.152
+Epoch 896 | tst f1:42.8, accuracy:52.7, aupr: 36.1, auroc:53.5 | trn f1:40.6, accuracy:53.1, aupr: 33.4, auroc:54.2 , loss:1.127
+Epoch 1024 | tst f1:42.6, accuracy:52.8, aupr: 36.3, auroc:53.5 | trn f1:42.0, accuracy:53.1, aupr: 35.1, auroc:53.6 , loss:1.135
+Running for Collaborative Filtering with dropout: 0.8 and learning rate: 0.5
+Training...
+Epoch 0 | tst f1:39.5, accuracy:49.5, aupr: 33.3, auroc:49.0 | trn f1:41.7, accuracy:47.7, aupr: 36.5, auroc:46.7 , loss:1.377
+Epoch 128 | tst f1:39.6, accuracy:49.8, aupr: 32.9, auroc:48.8 | trn f1:36.4, accuracy:49.3, aupr: 28.8, auroc:48.5 , loss:1.315
+Epoch 256 | tst f1:39.7, accuracy:50.4, aupr: 34.0, auroc:49.9 | trn f1:37.2, accuracy:49.7, aupr: 30.5, auroc:49.0 , loss:1.288
+Epoch 384 | tst f1:39.9, accuracy:51.0, aupr: 34.5, auroc:50.8 | trn f1:36.6, accuracy:49.8, aupr: 30.3, auroc:49.5 , loss:1.246
+Epoch 512 | tst f1:41.5, accuracy:52.6, aupr: 35.6, auroc:52.7 | trn f1:37.5, accuracy:52.0, aupr: 30.2, auroc:51.7 , loss:1.170
+Epoch 640 | tst f1:41.1, accuracy:52.7, aupr: 36.1, auroc:52.5 | trn f1:39.0, accuracy:52.7, aupr: 32.6, auroc:52.6 , loss:1.129
+Epoch 768 | tst f1:41.5, accuracy:53.4, aupr: 36.3, auroc:53.2 | trn f1:40.5, accuracy:53.9, aupr: 34.2, auroc:54.0 , loss:1.082
+Epoch 896 | tst f1:41.8, accuracy:53.9, aupr: 36.9, auroc:53.8 | trn f1:39.0, accuracy:54.5, aupr: 32.1, auroc:54.6 , loss:1.060
+Epoch 1024 | tst f1:41.3, accuracy:53.6, aupr: 36.7, auroc:53.6 | trn f1:41.1, accuracy:54.8, aupr: 35.1, auroc:55.1 , loss:1.055
+
+
+Running for SADRE with dropout: 0.4 and learning rate: 0.1
+Training...
+Epoch 0 | tst f1:39.0, accuracy:48.1, aupr: 33.0, auroc:47.7 | trn f1:36.1, accuracy:48.2, aupr: 29.1, auroc:47.6 , loss:0.970
+Epoch 128 | tst f1:38.8, accuracy:48.0, aupr: 33.0, auroc:47.7 | trn f1:37.2, accuracy:48.1, aupr: 30.4, auroc:47.8 , loss:0.962
+Epoch 256 | tst f1:38.8, accuracy:48.3, aupr: 32.9, auroc:47.7 | trn f1:35.0, accuracy:47.8, aupr: 28.0, auroc:47.0 , loss:0.969
+Epoch 384 | tst f1:39.0, accuracy:48.7, aupr: 33.3, auroc:48.3 | trn f1:35.9, accuracy:48.3, aupr: 29.2, auroc:47.6 , loss:0.955
+Epoch 512 | tst f1:39.6, accuracy:49.2, aupr: 33.5, auroc:48.9 | trn f1:37.7, accuracy:48.4, aupr: 31.9, auroc:48.3 , loss:0.940
+Epoch 640 | tst f1:39.6, accuracy:49.1, aupr: 33.9, auroc:49.2 | trn f1:37.2, accuracy:48.9, aupr: 30.9, auroc:48.6 , loss:0.929
+Epoch 768 | tst f1:39.7, accuracy:49.7, aupr: 34.3, auroc:49.5 | trn f1:34.1, accuracy:49.1, aupr: 27.5, auroc:48.6 , loss:0.924
+Epoch 896 | tst f1:39.5, accuracy:49.3, aupr: 33.9, auroc:49.0 | trn f1:36.9, accuracy:49.5, aupr: 30.4, auroc:49.0 , loss:0.918
+Epoch 1024 | tst f1:39.9, accuracy:50.0, aupr: 34.5, auroc:49.8 | trn f1:37.3, accuracy:49.2, aupr: 31.2, auroc:48.4 , loss:0.924
+Running for SADRE with dropout: 0.4 and learning rate: 0.3
+Training...
+Epoch 0 | tst f1:39.4, accuracy:49.8, aupr: 33.6, auroc:49.4 | trn f1:39.7, accuracy:51.7, aupr: 33.5, auroc:51.7 , loss:0.881
+Epoch 128 | tst f1:39.5, accuracy:50.2, aupr: 33.9, auroc:49.8 | trn f1:37.7, accuracy:50.8, aupr: 31.2, auroc:50.4 , loss:0.906
+Epoch 256 | tst f1:40.3, accuracy:51.4, aupr: 35.0, auroc:51.1 | trn f1:37.3, accuracy:51.6, aupr: 30.9, auroc:51.2 , loss:0.887
+Epoch 384 | tst f1:40.3, accuracy:51.9, aupr: 35.5, auroc:51.5 | trn f1:39.3, accuracy:52.5, aupr: 33.8, auroc:52.3 , loss:0.863
+Epoch 512 | tst f1:41.0, accuracy:53.1, aupr: 36.6, auroc:52.8 | trn f1:39.5, accuracy:53.4, aupr: 34.2, auroc:53.5 , loss:0.838
+Epoch 640 | tst f1:41.4, accuracy:53.8, aupr: 37.7, auroc:54.0 | trn f1:39.3, accuracy:54.7, aupr: 33.5, auroc:55.3 , loss:0.808
+Epoch 768 | tst f1:41.7, accuracy:54.4, aupr: 37.6, auroc:54.3 | trn f1:40.9, accuracy:55.6, aupr: 36.3, auroc:55.9 , loss:0.791
+Epoch 896 | tst f1:41.8, accuracy:54.8, aupr: 38.4, auroc:54.8 | trn f1:41.7, accuracy:56.7, aupr: 36.9, auroc:57.1 , loss:0.774
+Epoch 1024 | tst f1:42.1, accuracy:55.5, aupr: 38.8, auroc:55.3 | trn f1:41.3, accuracy:56.6, aupr: 36.7, auroc:57.0 , loss:0.773
+Running for SADRE with dropout: 0.4 and learning rate: 0.5
+Training...
+Epoch 0 | tst f1:38.5, accuracy:48.5, aupr: 31.9, auroc:47.9 | trn f1:31.3, accuracy:49.7, aupr: 24.3, auroc:49.2 , loss:0.937
+Epoch 128 | tst f1:38.9, accuracy:49.2, aupr: 32.3, auroc:48.3 | trn f1:37.1, accuracy:49.7, aupr: 29.4, auroc:49.3 , loss:0.942
+Epoch 256 | tst f1:39.6, accuracy:50.1, aupr: 33.3, auroc:49.7 | trn f1:37.7, accuracy:50.6, aupr: 29.9, auroc:50.5 , loss:0.912
+Epoch 384 | tst f1:40.4, accuracy:51.5, aupr: 34.6, auroc:51.5 | trn f1:38.4, accuracy:52.2, aupr: 30.8, auroc:52.1 , loss:0.868
+Epoch 512 | tst f1:41.7, accuracy:53.7, aupr: 36.2, auroc:53.8 | trn f1:40.9, accuracy:54.5, aupr: 34.3, auroc:54.8 , loss:0.819
+Epoch 640 | tst f1:42.3, accuracy:55.0, aupr: 37.2, auroc:55.1 | trn f1:43.0, accuracy:56.5, aupr: 36.9, auroc:57.6 , loss:0.775
+Epoch 768 | tst f1:43.6, accuracy:56.5, aupr: 39.1, auroc:57.0 | trn f1:42.6, accuracy:58.0, aupr: 36.6, auroc:58.8 , loss:0.747
+Epoch 896 | tst f1:44.0, accuracy:56.8, aupr: 39.1, auroc:57.2 | trn f1:44.4, accuracy:58.7, aupr: 39.1, auroc:59.9 , loss:0.735
+Epoch 1024 | tst f1:44.1, accuracy:57.1, aupr: 39.4, auroc:57.5 | trn f1:43.6, accuracy:58.9, aupr: 38.3, auroc:60.4 , loss:0.726
+Running for SADRE with dropout: 0.6 and learning rate: 0.1
+Training...
+Epoch 0 | tst f1:40.7, accuracy:51.2, aupr: 34.0, auroc:51.3 | trn f1:42.0, accuracy:51.3, aupr: 34.5, auroc:51.4 , loss:1.011
+Epoch 128 | tst f1:41.3, accuracy:52.0, aupr: 34.2, auroc:51.6 | trn f1:38.8, accuracy:52.2, aupr: 31.0, auroc:52.1 , loss:0.985
+Epoch 256 | tst f1:40.9, accuracy:51.6, aupr: 34.3, auroc:51.6 | trn f1:39.1, accuracy:51.9, aupr: 31.5, auroc:51.8 , loss:0.992
+Epoch 384 | tst f1:41.0, accuracy:51.7, aupr: 34.3, auroc:51.7 | trn f1:38.6, accuracy:51.8, aupr: 31.0, auroc:51.9 , loss:0.982
+Epoch 512 | tst f1:41.2, accuracy:52.0, aupr: 34.8, auroc:51.9 | trn f1:39.7, accuracy:52.5, aupr: 32.4, auroc:52.8 , loss:0.968
+Epoch 640 | tst f1:41.0, accuracy:52.1, aupr: 34.6, auroc:51.9 | trn f1:38.6, accuracy:52.6, aupr: 31.1, auroc:52.5 , loss:0.964
+Epoch 768 | tst f1:40.9, accuracy:52.1, aupr: 34.6, auroc:52.1 | trn f1:37.7, accuracy:52.8, aupr: 29.5, auroc:52.8 , loss:0.959
+Epoch 896 | tst f1:41.2, accuracy:52.5, aupr: 34.7, auroc:52.2 | trn f1:40.2, accuracy:53.0, aupr: 33.0, auroc:53.2 , loss:0.949
+Epoch 1024 | tst f1:41.1, accuracy:52.4, aupr: 35.0, auroc:52.4 | trn f1:38.8, accuracy:53.1, aupr: 31.3, auroc:53.1 , loss:0.944
+Running for SADRE with dropout: 0.6 and learning rate: 0.3
+Training...
+Epoch 0 | tst f1:40.4, accuracy:50.1, aupr: 33.3, auroc:49.7 | trn f1:27.2, accuracy:49.5, aupr: 19.4, auroc:49.7 , loss:1.066
+Epoch 128 | tst f1:40.5, accuracy:50.1, aupr: 33.3, auroc:49.9 | trn f1:37.3, accuracy:50.1, aupr: 29.1, auroc:49.9 , loss:1.042
+Epoch 256 | tst f1:40.6, accuracy:50.5, aupr: 33.7, auroc:50.4 | trn f1:39.0, accuracy:50.0, aupr: 31.1, auroc:49.9 , loss:1.033
+Epoch 384 | tst f1:40.9, accuracy:51.4, aupr: 34.0, auroc:51.2 | trn f1:38.6, accuracy:51.1, aupr: 31.0, auroc:50.9 , loss:0.998
+Epoch 512 | tst f1:41.6, accuracy:52.5, aupr: 34.9, auroc:52.2 | trn f1:38.8, accuracy:51.9, aupr: 31.2, auroc:52.2 , loss:0.966
+Epoch 640 | tst f1:41.1, accuracy:52.3, aupr: 34.7, auroc:51.9 | trn f1:40.2, accuracy:53.0, aupr: 33.0, auroc:53.1 , loss:0.939
+Epoch 768 | tst f1:42.0, accuracy:53.4, aupr: 35.8, auroc:53.4 | trn f1:40.1, accuracy:53.3, aupr: 32.4, auroc:54.0 , loss:0.923
+Epoch 896 | tst f1:42.4, accuracy:53.6, aupr: 36.3, auroc:53.9 | trn f1:40.8, accuracy:54.1, aupr: 33.0, auroc:54.4 , loss:0.907
+Epoch 1024 | tst f1:42.1, accuracy:53.5, aupr: 35.9, auroc:53.5 | trn f1:40.2, accuracy:54.1, aupr: 32.7, auroc:54.5 , loss:0.904
+Running for SADRE with dropout: 0.6 and learning rate: 0.5
+Training...
+Epoch 0 | tst f1:39.2, accuracy:49.7, aupr: 32.6, auroc:49.2 | trn f1:35.5, accuracy:51.2, aupr: 27.9, auroc:50.3 , loss:1.008
+Epoch 128 | tst f1:39.6, accuracy:50.2, aupr: 33.1, auroc:49.6 | trn f1:39.4, accuracy:50.2, aupr: 32.5, auroc:49.7 , loss:1.044
+Epoch 256 | tst f1:40.3, accuracy:51.2, aupr: 33.8, auroc:50.7 | trn f1:39.3, accuracy:50.9, aupr: 32.1, auroc:50.4 , loss:1.022
+Epoch 384 | tst f1:41.0, accuracy:52.3, aupr: 34.8, auroc:52.2 | trn f1:38.1, accuracy:52.2, aupr: 30.2, auroc:51.7 , loss:0.977
+Epoch 512 | tst f1:41.0, accuracy:53.2, aupr: 35.5, auroc:53.0 | trn f1:39.7, accuracy:53.7, aupr: 32.6, auroc:53.7 , loss:0.921
+Epoch 640 | tst f1:42.7, accuracy:55.1, aupr: 36.7, auroc:54.7 | trn f1:39.0, accuracy:55.9, aupr: 31.5, auroc:55.7 , loss:0.873
+Epoch 768 | tst f1:42.9, accuracy:55.8, aupr: 37.7, auroc:55.7 | trn f1:41.1, accuracy:56.9, aupr: 34.0, auroc:57.2 , loss:0.845
+Epoch 896 | tst f1:42.9, accuracy:55.9, aupr: 38.0, auroc:55.9 | trn f1:43.2, accuracy:57.4, aupr: 37.7, auroc:57.6 , loss:0.829
+Epoch 1024 | tst f1:43.0, accuracy:56.1, aupr: 37.9, auroc:56.1 | trn f1:41.6, accuracy:57.8, aupr: 35.6, auroc:58.0 , loss:0.820
+Running for SADRE with dropout: 0.8 and learning rate: 0.1
+Training...
+Epoch 0 | tst f1:39.6, accuracy:49.3, aupr: 32.7, auroc:48.7 | trn f1:42.4, accuracy:48.1, aupr: 37.9, auroc:47.6 , loss:1.357
+Epoch 128 | tst f1:39.8, accuracy:49.2, aupr: 33.0, auroc:49.0 | trn f1:34.7, accuracy:48.7, aupr: 27.3, auroc:48.4 , loss:1.306
+Epoch 256 | tst f1:39.6, accuracy:49.3, aupr: 32.8, auroc:49.0 | trn f1:36.5, accuracy:49.3, aupr: 28.7, auroc:48.8 , loss:1.310
+Epoch 384 | tst f1:40.0, accuracy:49.6, aupr: 33.4, auroc:49.4 | trn f1:37.8, accuracy:49.5, aupr: 30.6, auroc:49.0 , loss:1.300
+Epoch 512 | tst f1:40.4, accuracy:50.1, aupr: 33.6, auroc:49.9 | trn f1:37.9, accuracy:49.4, aupr: 30.7, auroc:49.1 , loss:1.282
+Epoch 640 | tst f1:39.6, accuracy:49.9, aupr: 33.4, auroc:49.6 | trn f1:35.7, accuracy:49.8, aupr: 28.5, auroc:49.3 , loss:1.264
+Epoch 768 | tst f1:40.0, accuracy:50.0, aupr: 33.8, auroc:50.1 | trn f1:38.2, accuracy:49.6, aupr: 30.9, auroc:49.3 , loss:1.275
+Epoch 896 | tst f1:39.6, accuracy:49.8, aupr: 33.5, auroc:49.6 | trn f1:39.1, accuracy:50.3, aupr: 32.0, auroc:49.9 , loss:1.251
+Epoch 1024 | tst f1:40.2, accuracy:50.3, aupr: 33.7, auroc:50.0 | trn f1:37.5, accuracy:50.3, aupr: 30.2, auroc:49.7 , loss:1.258
+Running for SADRE with dropout: 0.8 and learning rate: 0.3
+Training...
+Epoch 0 | tst f1:39.1, accuracy:48.3, aupr: 32.1, auroc:47.9 | trn f1:33.1, accuracy:47.8, aupr: 26.8, auroc:46.4 , loss:1.357
+Epoch 128 | tst f1:39.0, accuracy:48.6, aupr: 32.5, auroc:48.1 | trn f1:36.9, accuracy:48.7, aupr: 29.6, auroc:48.2 , loss:1.326
+Epoch 256 | tst f1:39.5, accuracy:49.1, aupr: 32.6, auroc:48.8 | trn f1:35.1, accuracy:48.7, aupr: 27.5, auroc:48.0 , loss:1.324
+Epoch 384 | tst f1:39.9, accuracy:49.9, aupr: 33.4, auroc:49.5 | trn f1:36.0, accuracy:48.9, aupr: 29.0, auroc:48.6 , loss:1.290
+Epoch 512 | tst f1:40.1, accuracy:50.2, aupr: 33.9, auroc:50.2 | trn f1:38.4, accuracy:49.9, aupr: 31.7, auroc:49.5 , loss:1.249
+Epoch 640 | tst f1:40.2, accuracy:50.4, aupr: 34.0, auroc:50.5 | trn f1:37.0, accuracy:50.1, aupr: 29.9, auroc:49.7 , loss:1.231
+Epoch 768 | tst f1:40.4, accuracy:51.0, aupr: 34.1, auroc:50.6 | trn f1:39.8, accuracy:51.8, aupr: 33.0, auroc:51.6 , loss:1.184
+Epoch 896 | tst f1:40.8, accuracy:51.5, aupr: 35.0, auroc:51.5 | trn f1:36.9, accuracy:51.4, aupr: 29.9, auroc:51.6 , loss:1.169
+Epoch 1024 | tst f1:40.8, accuracy:51.4, aupr: 34.6, auroc:51.1 | trn f1:38.4, accuracy:51.8, aupr: 31.3, auroc:51.7 , loss:1.168
+Running for SADRE with dropout: 0.8 and learning rate: 0.5
+Training...
+Epoch 0 | tst f1:39.7, accuracy:50.7, aupr: 33.8, auroc:49.9 | trn f1:46.6, accuracy:51.1, aupr: 43.2, auroc:50.3 , loss:1.318
+Epoch 128 | tst f1:40.2, accuracy:51.0, aupr: 34.3, auroc:50.4 | trn f1:37.2, accuracy:50.6, aupr: 30.5, auroc:49.9 , loss:1.267
+Epoch 256 | tst f1:40.2, accuracy:51.4, aupr: 34.9, auroc:51.2 | trn f1:37.1, accuracy:50.9, aupr: 30.7, auroc:50.3 , loss:1.243
+Epoch 384 | tst f1:40.5, accuracy:52.4, aupr: 35.4, auroc:51.7 | trn f1:37.6, accuracy:52.2, aupr: 31.1, auroc:51.3 , loss:1.192
+Epoch 512 | tst f1:40.4, accuracy:52.7, aupr: 35.4, auroc:52.2 | trn f1:39.9, accuracy:54.3, aupr: 32.8, auroc:53.9 , loss:1.120
+Epoch 640 | tst f1:41.5, accuracy:54.0, aupr: 36.8, auroc:53.7 | trn f1:39.3, accuracy:54.3, aupr: 33.4, auroc:54.0 , loss:1.094
+Epoch 768 | tst f1:42.1, accuracy:54.7, aupr: 37.7, auroc:54.5 | trn f1:41.2, accuracy:55.5, aupr: 35.2, auroc:55.3 , loss:1.062
+Epoch 896 | tst f1:42.2, accuracy:55.0, aupr: 37.6, auroc:54.5 | trn f1:41.0, accuracy:55.6, aupr: 35.7, auroc:55.5 , loss:1.040
+Epoch 1024 | tst f1:42.6, accuracy:55.3, aupr: 38.0, auroc:55.2 | trn f1:42.1, accuracy:56.3, aupr: 36.7, auroc:56.2 , loss:1.025
+
+
+Running for CADRE w/o pretrain with dropout: 0.4 and learning rate: 0.1
+Training...
+Epoch 0 | tst f1:41.0, accuracy:49.5, aupr: 34.6, auroc:50.3 | trn f1:36.5, accuracy:49.4, aupr: 29.9, auroc:51.6 , loss:1.839
+Epoch 128 | tst f1:46.2, accuracy:59.5, aupr: 43.8, auroc:60.3 | trn f1:40.9, accuracy:53.5, aupr: 33.9, auroc:54.2 , loss:1.481
+Epoch 256 | tst f1:49.1, accuracy:63.8, aupr: 48.5, auroc:64.9 | trn f1:48.9, accuracy:63.5, aupr: 47.5, auroc:65.4 , loss:1.021
+Epoch 384 | tst f1:51.2, accuracy:65.7, aupr: 51.6, auroc:67.0 | trn f1:49.4, accuracy:66.6, aupr: 48.0, auroc:68.1 , loss:0.864
+Epoch 512 | tst f1:52.2, accuracy:68.3, aupr: 53.9, auroc:69.2 | trn f1:53.2, accuracy:71.3, aupr: 53.3, auroc:73.1 , loss:0.751
+Epoch 640 | tst f1:53.0, accuracy:68.4, aupr: 54.7, auroc:69.8 | trn f1:53.8, accuracy:70.1, aupr: 54.4, auroc:71.8 , loss:0.815
+Epoch 768 | tst f1:52.4, accuracy:68.6, aupr: 54.8, auroc:69.9 | trn f1:56.6, accuracy:72.4, aupr: 57.7, auroc:75.2 , loss:0.721
+Epoch 896 | tst f1:52.7, accuracy:69.2, aupr: 55.1, auroc:70.3 | trn f1:55.9, accuracy:72.7, aupr: 58.8, auroc:75.1 , loss:0.713
+Epoch 1024 | tst f1:53.6, accuracy:69.2, aupr: 56.1, auroc:70.9 | trn f1:58.2, accuracy:72.7, aupr: 62.5, auroc:75.4 , loss:0.732
+Running for CADRE w/o pretrain with dropout: 0.4 and learning rate: 0.3
+Training...
+Epoch 0 | tst f1:42.3, accuracy:52.9, aupr: 36.1, auroc:53.3 | trn f1:33.4, accuracy:51.5, aupr: 27.4, auroc:53.2 , loss:1.555
+Epoch 128 | tst f1:48.3, accuracy:60.9, aupr: 45.3, auroc:63.1 | trn f1:44.1, accuracy:59.5, aupr: 38.4, auroc:60.6 , loss:1.232
+Epoch 256 | tst f1:52.0, accuracy:66.3, aupr: 52.7, auroc:68.3 | trn f1:52.6, accuracy:66.8, aupr: 51.6, auroc:69.6 , loss:0.913
+Epoch 384 | tst f1:51.6, accuracy:67.6, aupr: 52.5, auroc:68.8 | trn f1:55.4, accuracy:71.1, aupr: 56.5, auroc:73.8 , loss:0.784
+Epoch 512 | tst f1:51.3, accuracy:67.8, aupr: 52.7, auroc:68.9 | trn f1:53.6, accuracy:71.1, aupr: 53.6, auroc:72.8 , loss:0.783
+Epoch 640 | tst f1:52.4, accuracy:69.7, aupr: 55.3, auroc:71.3 | trn f1:54.5, accuracy:72.2, aupr: 55.7, auroc:74.2 , loss:0.731
+Epoch 768 | tst f1:53.3, accuracy:69.0, aupr: 55.0, auroc:70.8 | trn f1:57.6, accuracy:72.7, aupr: 60.1, auroc:75.6 , loss:0.711
+Epoch 896 | tst f1:54.6, accuracy:71.2, aupr: 57.7, auroc:72.7 | trn f1:56.9, accuracy:74.3, aupr: 57.6, auroc:76.5 , loss:0.670
+Epoch 1024 | tst f1:54.2, accuracy:70.4, aupr: 56.8, auroc:72.4 | trn f1:58.5, accuracy:74.8, aupr: 61.1, auroc:77.1 , loss:0.661
+Running for CADRE w/o pretrain with dropout: 0.4 and learning rate: 0.5
+Training...
+Epoch 0 | tst f1:40.1, accuracy:50.2, aupr: 33.9, auroc:49.8 | trn f1:41.1, accuracy:49.2, aupr: 35.0, auroc:48.2 , loss:1.755
+Epoch 128 | tst f1:47.8, accuracy:64.3, aupr: 48.3, auroc:64.4 | trn f1:44.7, accuracy:59.0, aupr: 39.4, auroc:60.1 , loss:1.244
+Epoch 256 | tst f1:49.1, accuracy:65.2, aupr: 49.8, auroc:65.5 | trn f1:48.3, accuracy:65.8, aupr: 46.5, auroc:66.9 , loss:0.957
+Epoch 384 | tst f1:51.8, accuracy:68.0, aupr: 53.1, auroc:68.8 | trn f1:53.8, accuracy:70.4, aupr: 54.7, auroc:72.4 , loss:0.801
+Epoch 512 | tst f1:52.0, accuracy:67.8, aupr: 53.4, auroc:69.3 | trn f1:54.8, accuracy:72.3, aupr: 56.0, auroc:74.1 , loss:0.752
+Epoch 640 | tst f1:53.4, accuracy:68.4, aupr: 55.2, auroc:70.6 | trn f1:56.6, accuracy:72.6, aupr: 59.3, auroc:74.7 , loss:0.732
+Epoch 768 | tst f1:54.2, accuracy:70.0, aupr: 56.8, auroc:71.6 | trn f1:56.8, accuracy:73.8, aupr: 58.0, auroc:76.2 , loss:0.672
+Epoch 896 | tst f1:55.9, accuracy:71.8, aupr: 59.2, auroc:73.8 | trn f1:58.6, accuracy:75.3, aupr: 61.7, auroc:77.9 , loss:0.626
+Epoch 1024 | tst f1:55.3, accuracy:71.8, aupr: 59.1, auroc:73.8 | trn f1:59.8, accuracy:75.7, aupr: 62.8, auroc:78.6 , loss:0.605
+Running for CADRE w/o pretrain with dropout: 0.6 and learning rate: 0.1
+Training...
+Epoch 0 | tst f1:39.3, accuracy:50.4, aupr: 34.1, auroc:49.7 | trn f1:37.0, accuracy:51.3, aupr: 28.6, auroc:48.3 , loss:2.020
+Epoch 128 | tst f1:44.5, accuracy:57.3, aupr: 40.7, auroc:58.2 | trn f1:38.9, accuracy:53.2, aupr: 32.8, auroc:52.4 , loss:1.616
+Epoch 256 | tst f1:45.9, accuracy:60.7, aupr: 43.9, auroc:60.8 | trn f1:44.0, accuracy:60.3, aupr: 39.9, auroc:61.3 , loss:1.172
+Epoch 384 | tst f1:49.2, accuracy:63.3, aupr: 48.1, auroc:64.7 | trn f1:48.5, accuracy:64.1, aupr: 47.0, auroc:66.0 , loss:1.004
+Epoch 512 | tst f1:49.7, accuracy:65.3, aupr: 50.2, auroc:66.5 | trn f1:51.0, accuracy:66.5, aupr: 50.4, auroc:68.7 , loss:0.950
+Epoch 640 | tst f1:51.2, accuracy:66.4, aupr: 51.3, auroc:68.1 | trn f1:52.2, accuracy:69.1, aupr: 52.3, auroc:71.1 , loss:0.886
+Epoch 768 | tst f1:50.5, accuracy:67.3, aupr: 52.7, auroc:68.2 | trn f1:51.7, accuracy:70.0, aupr: 51.8, auroc:71.7 , loss:0.860
+Epoch 896 | tst f1:52.9, accuracy:67.9, aupr: 53.9, auroc:69.7 | trn f1:55.2, accuracy:70.5, aupr: 56.3, auroc:72.4 , loss:0.875
+Epoch 1024 | tst f1:52.1, accuracy:67.5, aupr: 53.2, auroc:69.1 | trn f1:54.5, accuracy:70.5, aupr: 55.5, auroc:72.8 , loss:0.849
+Running for CADRE w/o pretrain with dropout: 0.6 and learning rate: 0.3
+Training...
+Epoch 0 | tst f1:40.8, accuracy:49.6, aupr: 34.3, auroc:50.1 | trn f1:39.1, accuracy:48.2, aupr: 33.0, auroc:48.8 , loss:1.997
+Epoch 128 | tst f1:45.0, accuracy:58.0, aupr: 42.0, auroc:58.7 | trn f1:41.2, accuracy:55.5, aupr: 34.5, auroc:57.0 , loss:1.461
+Epoch 256 | tst f1:47.3, accuracy:62.2, aupr: 46.4, auroc:62.9 | trn f1:45.7, accuracy:62.7, aupr: 41.7, auroc:64.0 , loss:1.102
+Epoch 384 | tst f1:50.1, accuracy:64.3, aupr: 49.7, auroc:65.7 | trn f1:51.3, accuracy:66.2, aupr: 51.7, auroc:68.4 , loss:0.966
+Epoch 512 | tst f1:51.8, accuracy:66.1, aupr: 52.5, auroc:68.2 | trn f1:52.2, accuracy:68.8, aupr: 51.6, auroc:70.8 , loss:0.905
+Epoch 640 | tst f1:52.0, accuracy:67.0, aupr: 52.9, auroc:68.5 | trn f1:51.8, accuracy:68.5, aupr: 51.5, auroc:71.1 , loss:0.873
+Epoch 768 | tst f1:51.6, accuracy:67.8, aupr: 53.0, auroc:69.1 | trn f1:55.3, accuracy:70.3, aupr: 56.6, auroc:73.0 , loss:0.835
+Epoch 896 | tst f1:53.0, accuracy:68.9, aupr: 54.8, auroc:70.2 | trn f1:53.6, accuracy:70.7, aupr: 54.4, auroc:72.8 , loss:0.803
+Epoch 1024 | tst f1:53.2, accuracy:68.9, aupr: 55.3, auroc:70.7 | trn f1:56.3, accuracy:72.8, aupr: 57.4, auroc:75.7 , loss:0.721
+Running for CADRE w/o pretrain with dropout: 0.6 and learning rate: 0.5
+Training...
+Epoch 0 | tst f1:40.5, accuracy:50.5, aupr: 34.1, auroc:50.4 | trn f1:40.0, accuracy:49.7, aupr: 33.8, auroc:49.7 , loss:2.070
+Epoch 128 | tst f1:48.4, accuracy:60.9, aupr: 45.6, auroc:62.3 | trn f1:42.9, accuracy:57.6, aupr: 36.8, auroc:58.6 , loss:1.444
+Epoch 256 | tst f1:49.5, accuracy:63.7, aupr: 48.8, auroc:65.0 | trn f1:46.7, accuracy:63.4, aupr: 43.6, auroc:64.9 , loss:1.103
+Epoch 384 | tst f1:49.8, accuracy:64.9, aupr: 50.4, auroc:66.4 | trn f1:50.6, accuracy:66.6, aupr: 49.4, auroc:68.5 , loss:1.016
+Epoch 512 | tst f1:51.4, accuracy:67.5, aupr: 52.9, auroc:68.7 | trn f1:52.3, accuracy:69.8, aupr: 51.1, auroc:72.0 , loss:0.921
+Epoch 640 | tst f1:52.1, accuracy:67.1, aupr: 53.2, auroc:69.3 | trn f1:55.1, accuracy:71.3, aupr: 56.3, auroc:73.5 , loss:0.833
+Epoch 768 | tst f1:53.7, accuracy:68.1, aupr: 55.0, auroc:70.5 | trn f1:55.3, accuracy:69.5, aupr: 56.8, auroc:72.1 , loss:0.823
+Epoch 896 | tst f1:54.1, accuracy:69.2, aupr: 55.9, auroc:71.5 | trn f1:56.6, accuracy:72.7, aupr: 58.4, auroc:75.2 , loss:0.732
+Epoch 1024 | tst f1:53.7, accuracy:69.6, aupr: 56.9, auroc:71.5 | trn f1:56.9, accuracy:73.7, aupr: 57.0, auroc:76.6 , loss:0.689
+Running for CADRE w/o pretrain with dropout: 0.8 and learning rate: 0.1
+Training...
+Epoch 0 | tst f1:41.4, accuracy:51.1, aupr: 35.2, auroc:51.4 | trn f1:39.2, accuracy:50.5, aupr: 32.9, auroc:50.6 , loss:2.675
+Epoch 128 | tst f1:42.8, accuracy:54.4, aupr: 38.1, auroc:55.1 | trn f1:40.0, accuracy:52.8, aupr: 33.7, auroc:52.9 , loss:2.162
+Epoch 256 | tst f1:44.0, accuracy:56.1, aupr: 39.8, auroc:56.8 | trn f1:40.7, accuracy:56.5, aupr: 34.3, auroc:56.9 , loss:1.649
+Epoch 384 | tst f1:44.3, accuracy:57.7, aupr: 41.1, auroc:58.2 | trn f1:43.2, accuracy:58.5, aupr: 38.3, auroc:59.7 , loss:1.443
+Epoch 512 | tst f1:45.9, accuracy:59.7, aupr: 43.8, auroc:60.6 | trn f1:45.3, accuracy:60.5, aupr: 41.2, auroc:62.0 , loss:1.374
+Epoch 640 | tst f1:47.3, accuracy:60.7, aupr: 44.8, auroc:61.9 | trn f1:46.4, accuracy:62.0, aupr: 43.5, auroc:63.5 , loss:1.326
+Epoch 768 | tst f1:47.7, accuracy:61.8, aupr: 46.2, auroc:63.1 | trn f1:48.6, accuracy:63.6, aupr: 46.0, auroc:65.3 , loss:1.277
+Epoch 896 | tst f1:46.8, accuracy:61.9, aupr: 45.8, auroc:62.6 | trn f1:47.2, accuracy:64.7, aupr: 43.9, auroc:66.3 , loss:1.216
+Epoch 1024 | tst f1:48.2, accuracy:62.7, aupr: 47.6, auroc:63.9 | trn f1:48.9, accuracy:64.9, aupr: 47.1, auroc:66.4 , loss:1.211
+Running for CADRE w/o pretrain with dropout: 0.8 and learning rate: 0.3
+Training...
+Epoch 0 | tst f1:40.6, accuracy:49.4, aupr: 34.0, auroc:49.7 | trn f1:37.6, accuracy:46.9, aupr: 31.8, auroc:47.8 , loss:2.724
+Epoch 128 | tst f1:44.1, accuracy:56.0, aupr: 40.0, auroc:57.1 | trn f1:41.8, accuracy:52.9, aupr: 35.9, auroc:53.4 , loss:2.122
+Epoch 256 | tst f1:43.9, accuracy:56.2, aupr: 39.8, auroc:57.0 | trn f1:42.4, accuracy:57.4, aupr: 36.3, auroc:58.7 , loss:1.629
+Epoch 384 | tst f1:45.7, accuracy:59.5, aupr: 43.8, auroc:60.7 | trn f1:44.4, accuracy:58.9, aupr: 39.7, auroc:60.1 , loss:1.581
+Epoch 512 | tst f1:47.9, accuracy:61.3, aupr: 45.4, auroc:62.8 | trn f1:45.9, accuracy:61.7, aupr: 42.1, auroc:63.3 , loss:1.436
+Epoch 640 | tst f1:47.3, accuracy:62.1, aupr: 46.1, auroc:62.8 | trn f1:47.2, accuracy:64.5, aupr: 43.4, auroc:66.2 , loss:1.254
+Epoch 768 | tst f1:47.8, accuracy:63.3, aupr: 47.3, auroc:64.2 | trn f1:47.5, accuracy:65.3, aupr: 44.8, auroc:66.8 , loss:1.168
+Epoch 896 | tst f1:49.3, accuracy:64.2, aupr: 49.0, auroc:65.5 | trn f1:49.1, accuracy:65.5, aupr: 48.6, auroc:67.3 , loss:1.136
+Epoch 1024 | tst f1:49.7, accuracy:64.5, aupr: 49.0, auroc:65.6 | trn f1:49.4, accuracy:66.8, aupr: 47.6, auroc:68.8 , loss:1.029
+Running for CADRE w/o pretrain with dropout: 0.8 and learning rate: 0.5
+Training...
+Epoch 0 | tst f1:40.2, accuracy:50.0, aupr: 34.1, auroc:49.9 | trn f1:43.7, accuracy:50.2, aupr: 38.7, auroc:51.7 , loss:2.665
+Epoch 128 | tst f1:41.5, accuracy:54.1, aupr: 36.2, auroc:53.2 | trn f1:37.9, accuracy:53.1, aupr: 31.2, auroc:52.8 , loss:2.011
+Epoch 256 | tst f1:44.0, accuracy:57.0, aupr: 41.1, auroc:57.7 | trn f1:40.8, accuracy:55.4, aupr: 35.5, auroc:55.7 , loss:1.869
+Epoch 384 | tst f1:46.8, accuracy:59.1, aupr: 43.4, auroc:60.5 | trn f1:45.4, accuracy:58.5, aupr: 41.7, auroc:59.7 , loss:1.812
+Epoch 512 | tst f1:46.3, accuracy:60.6, aupr: 44.3, auroc:61.5 | trn f1:43.3, accuracy:60.0, aupr: 39.2, auroc:60.9 , loss:1.779
+Epoch 640 | tst f1:47.4, accuracy:62.1, aupr: 45.9, auroc:62.9 | trn f1:45.7, accuracy:62.6, aupr: 42.9, auroc:64.1 , loss:1.480
+Epoch 768 | tst f1:49.1, accuracy:63.1, aupr: 47.4, auroc:64.2 | trn f1:48.0, accuracy:63.4, aupr: 46.4, auroc:65.0 , loss:1.247
+Epoch 896 | tst f1:50.1, accuracy:64.3, aupr: 50.0, auroc:66.2 | trn f1:50.9, accuracy:65.3, aupr: 50.9, auroc:67.8 , loss:1.117
+Epoch 1024 | tst f1:50.4, accuracy:65.2, aupr: 50.4, auroc:66.8 | trn f1:50.2, accuracy:66.4, aupr: 48.9, auroc:68.8 , loss:1.011
+
+
+Running for CADRE with pretrain with dropout: 0.4 and learning rate: 0.1
+Training...
+Epoch 0 | tst f1:41.9, accuracy:50.7, aupr: 37.5, auroc:51.5 | trn f1:36.0, accuracy:51.0, aupr: 31.1, auroc:52.5 , loss:4.654
+Epoch 128 | tst f1:42.2, accuracy:51.8, aupr: 37.9, auroc:52.6 | trn f1:38.8, accuracy:50.9, aupr: 34.5, auroc:52.0 , loss:4.635
+Epoch 256 | tst f1:43.4, accuracy:53.7, aupr: 39.6, auroc:55.0 | trn f1:40.6, accuracy:53.3, aupr: 35.6, auroc:54.5 , loss:4.114
+Epoch 384 | tst f1:43.9, accuracy:56.1, aupr: 40.4, auroc:57.1 | trn f1:42.3, accuracy:54.9, aupr: 37.9, auroc:55.7 , loss:3.490
+Epoch 512 | tst f1:46.3, accuracy:58.7, aupr: 42.7, auroc:59.9 | trn f1:45.2, accuracy:58.3, aupr: 41.6, auroc:59.8 , loss:2.756
+Epoch 640 | tst f1:46.9, accuracy:60.5, aupr: 43.8, auroc:61.5 | trn f1:44.8, accuracy:61.1, aupr: 40.6, auroc:62.7 , loss:2.406
+Epoch 768 | tst f1:47.4, accuracy:61.6, aupr: 45.4, auroc:62.7 | trn f1:46.2, accuracy:62.4, aupr: 43.4, auroc:64.1 , loss:2.217
+Epoch 896 | tst f1:47.7, accuracy:62.1, aupr: 46.2, auroc:63.2 | trn f1:49.6, accuracy:63.9, aupr: 48.3, auroc:65.6 , loss:2.105
+Epoch 1024 | tst f1:47.8, accuracy:62.4, aupr: 46.6, auroc:63.5 | trn f1:46.7, accuracy:64.5, aupr: 43.5, auroc:66.4 , loss:2.019
+Running for CADRE with pretrain with dropout: 0.4 and learning rate: 0.3
+Training...
+Epoch 0 | tst f1:41.8, accuracy:50.4, aupr: 37.6, auroc:51.2 | trn f1:31.9, accuracy:48.8, aupr: 27.6, auroc:51.5 , loss:5.028
+Epoch 128 | tst f1:43.4, accuracy:52.5, aupr: 38.2, auroc:53.6 | trn f1:40.6, accuracy:50.6, aupr: 35.9, auroc:51.2 , loss:4.792
+Epoch 256 | tst f1:45.0, accuracy:58.1, aupr: 42.2, auroc:58.8 | trn f1:40.8, accuracy:55.0, aupr: 35.9, auroc:56.1 , loss:3.418
+Epoch 384 | tst f1:49.8, accuracy:64.8, aupr: 49.9, auroc:65.8 | trn f1:46.6, accuracy:63.4, aupr: 44.1, auroc:64.6 , loss:2.262
+Epoch 512 | tst f1:50.5, accuracy:66.8, aupr: 52.5, auroc:67.9 | trn f1:52.4, accuracy:70.0, aupr: 52.2, auroc:71.9 , loss:1.654
+Epoch 640 | tst f1:52.4, accuracy:68.2, aupr: 54.4, auroc:69.5 | trn f1:55.4, accuracy:70.6, aupr: 58.8, auroc:72.9 , loss:1.565
+Epoch 768 | tst f1:53.0, accuracy:68.6, aupr: 52.6, auroc:69.4 | trn f1:55.1, accuracy:71.8, aupr: 53.9, auroc:71.8 , loss:0.956
+Epoch 896 | tst f1:52.9, accuracy:68.6, aupr: 52.3, auroc:69.6 | trn f1:56.1, accuracy:72.0, aupr: 54.6, auroc:73.3 , loss:0.680
+Epoch 1024 | tst f1:52.9, accuracy:68.7, aupr: 52.8, auroc:69.8 | trn f1:55.7, accuracy:72.3, aupr: 53.7, auroc:73.9 , loss:0.660
+Running for CADRE with pretrain with dropout: 0.4 and learning rate: 0.5
+Training...
+Epoch 0 | tst f1:40.0, accuracy:48.0, aupr: 37.0, auroc:48.8 | trn f1:32.6, accuracy:48.6, aupr: 28.8, auroc:49.7 , loss:5.176
+Epoch 128 | tst f1:41.9, accuracy:52.2, aupr: 38.4, auroc:52.9 | trn f1:38.8, accuracy:49.7, aupr: 35.2, auroc:50.8 , loss:4.604
+Epoch 256 | tst f1:48.7, accuracy:62.9, aupr: 48.1, auroc:64.1 | trn f1:45.3, accuracy:58.8, aupr: 41.2, auroc:60.7 , loss:2.778
+Epoch 384 | tst f1:53.1, accuracy:68.2, aupr: 54.1, auroc:69.8 | trn f1:54.0, accuracy:69.2, aupr: 54.6, auroc:71.9 , loss:1.751
+Epoch 512 | tst f1:53.0, accuracy:68.6, aupr: 51.0, auroc:69.0 | trn f1:56.2, accuracy:72.1, aupr: 54.5, auroc:72.0 , loss:1.110
+Epoch 640 | tst f1:53.7, accuracy:69.4, aupr: 52.4, auroc:70.0 | trn f1:55.7, accuracy:73.3, aupr: 51.4, auroc:74.5 , loss:0.682
+Epoch 768 | tst f1:53.5, accuracy:69.6, aupr: 55.1, auroc:71.0 | trn f1:56.5, accuracy:73.9, aupr: 52.0, auroc:73.9 , loss:0.620
+Epoch 896 | tst f1:53.7, accuracy:69.6, aupr: 54.7, auroc:71.1 | trn f1:57.3, accuracy:73.5, aupr: 58.9, auroc:75.9 , loss:0.561
+Epoch 1024 | tst f1:53.9, accuracy:69.9, aupr: 55.2, auroc:71.5 | trn f1:58.2, accuracy:73.9, aupr: 59.4, auroc:76.5 , loss:0.548
+Running for CADRE with pretrain with dropout: 0.6 and learning rate: 0.1
+Training...
+Epoch 0 | tst f1:40.7, accuracy:50.6, aupr: 38.8, auroc:50.7 | trn f1:33.7, accuracy:51.3, aupr: 29.0, auroc:52.0 , loss:5.935
+Epoch 128 | tst f1:40.6, accuracy:50.8, aupr: 39.1, auroc:51.0 | trn f1:38.0, accuracy:51.0, aupr: 35.3, auroc:51.2 , loss:5.901
+Epoch 256 | tst f1:41.6, accuracy:52.5, aupr: 39.6, auroc:52.7 | trn f1:40.0, accuracy:52.4, aupr: 37.0, auroc:52.9 , loss:5.382
+Epoch 384 | tst f1:42.8, accuracy:54.2, aupr: 40.2, auroc:54.9 | trn f1:40.1, accuracy:54.2, aupr: 36.5, auroc:54.8 , loss:4.477
+Epoch 512 | tst f1:43.9, accuracy:56.2, aupr: 41.4, auroc:56.8 | trn f1:41.5, accuracy:56.0, aupr: 38.0, auroc:56.5 , loss:3.925
+Epoch 640 | tst f1:44.4, accuracy:57.5, aupr: 42.4, auroc:58.0 | trn f1:43.9, accuracy:58.5, aupr: 40.8, auroc:59.7 , loss:3.497
+Epoch 768 | tst f1:45.0, accuracy:58.3, aupr: 43.4, auroc:59.0 | trn f1:44.0, accuracy:59.6, aupr: 41.5, auroc:60.8 , loss:3.216
+Epoch 896 | tst f1:45.3, accuracy:59.2, aupr: 43.7, auroc:59.5 | trn f1:44.6, accuracy:60.5, aupr: 42.1, auroc:61.8 , loss:3.067
+Epoch 1024 | tst f1:45.3, accuracy:59.0, aupr: 43.8, auroc:59.6 | trn f1:46.0, accuracy:60.9, aupr: 44.1, auroc:62.1 , loss:3.000
+Running for CADRE with pretrain with dropout: 0.6 and learning rate: 0.3
+Training...
+Epoch 0 | tst f1:41.0, accuracy:50.8, aupr: 39.4, auroc:51.4 | trn f1:38.7, accuracy:51.0, aupr: 34.4, auroc:52.0 , loss:5.863
+Epoch 128 | tst f1:42.2, accuracy:52.8, aupr: 40.3, auroc:53.6 | trn f1:39.5, accuracy:51.0, aupr: 37.0, auroc:51.3 , loss:5.873
+Epoch 256 | tst f1:43.9, accuracy:56.1, aupr: 41.4, auroc:56.7 | trn f1:40.6, accuracy:54.8, aupr: 36.7, auroc:55.5 , loss:4.432
+Epoch 384 | tst f1:47.8, accuracy:61.4, aupr: 46.9, auroc:62.7 | trn f1:46.9, accuracy:60.0, aupr: 44.1, auroc:61.4 , loss:3.275
+Epoch 512 | tst f1:48.7, accuracy:63.1, aupr: 45.3, auroc:63.9 | trn f1:47.0, accuracy:64.0, aupr: 41.5, auroc:63.3 , loss:1.750
+Epoch 640 | tst f1:48.8, accuracy:63.5, aupr: 45.4, auroc:64.2 | trn f1:48.5, accuracy:64.8, aupr: 42.3, auroc:65.3 , loss:0.720
+Epoch 768 | tst f1:49.2, accuracy:63.6, aupr: 45.8, auroc:64.5 | trn f1:50.5, accuracy:65.5, aupr: 47.2, auroc:66.4 , loss:0.743
+Epoch 896 | tst f1:48.8, accuracy:63.4, aupr: 45.5, auroc:64.1 | trn f1:48.5, accuracy:65.8, aupr: 44.3, auroc:67.1 , loss:0.724
+Epoch 1024 | tst f1:48.9, accuracy:63.6, aupr: 45.7, auroc:64.6 | trn f1:49.6, accuracy:66.3, aupr: 44.8, auroc:67.3 , loss:0.721
+Running for CADRE with pretrain with dropout: 0.6 and learning rate: 0.5
+Training...
+Epoch 0 | tst f1:42.5, accuracy:50.9, aupr: 40.2, auroc:52.0 | trn f1:48.0, accuracy:52.2, aupr: 47.6, auroc:52.8 , loss:5.589
+Epoch 128 | tst f1:42.9, accuracy:53.5, aupr: 40.7, auroc:54.5 | trn f1:39.5, accuracy:51.3, aupr: 36.3, auroc:52.8 , loss:5.564
+Epoch 256 | tst f1:46.2, accuracy:60.0, aupr: 44.9, auroc:60.8 | trn f1:42.0, accuracy:57.5, aupr: 38.8, auroc:58.4 , loss:3.756
+Epoch 384 | tst f1:48.9, accuracy:64.5, aupr: 46.5, auroc:65.2 | trn f1:49.4, accuracy:65.4, aupr: 48.6, auroc:67.0 , loss:2.414
+Epoch 512 | tst f1:49.8, accuracy:65.8, aupr: 46.2, auroc:66.6 | trn f1:52.2, accuracy:68.5, aupr: 46.0, auroc:66.4 , loss:0.732
+Epoch 640 | tst f1:51.0, accuracy:66.6, aupr: 47.4, auroc:67.6 | trn f1:53.3, accuracy:69.1, aupr: 48.1, auroc:70.5 , loss:0.720
+Epoch 768 | tst f1:50.5, accuracy:66.1, aupr: 46.5, auroc:66.8 | trn f1:52.6, accuracy:69.2, aupr: 47.3, auroc:70.6 , loss:0.693
+Epoch 896 | tst f1:51.7, accuracy:66.8, aupr: 47.4, auroc:67.6 | trn f1:52.9, accuracy:69.7, aupr: 48.2, auroc:70.6 , loss:0.728
+Epoch 1024 | tst f1:50.5, accuracy:66.1, aupr: 46.9, auroc:67.2 | trn f1:54.1, accuracy:69.9, aupr: 49.1, auroc:71.7 , loss:0.705
+Running for CADRE with pretrain with dropout: 0.8 and learning rate: 0.1
+Training...
+Epoch 0 | tst f1:39.6, accuracy:49.7, aupr: 40.4, auroc:49.5 | trn f1:36.6, accuracy:48.6, aupr: 38.6, auroc:47.7 , loss:8.889
+Epoch 128 | tst f1:39.3, accuracy:49.9, aupr: 39.9, auroc:49.2 | trn f1:35.6, accuracy:49.8, aupr: 35.7, auroc:49.4 , loss:8.535
+Epoch 256 | tst f1:39.8, accuracy:51.4, aupr: 39.6, auroc:50.5 | trn f1:37.6, accuracy:50.5, aupr: 37.3, auroc:50.3 , loss:7.719
+Epoch 384 | tst f1:40.7, accuracy:52.5, aupr: 40.1, auroc:52.0 | trn f1:39.2, accuracy:52.6, aupr: 38.3, auroc:52.4 , loss:6.505
+Epoch 512 | tst f1:41.6, accuracy:54.1, aupr: 41.4, auroc:54.0 | trn f1:39.1, accuracy:53.6, aupr: 37.9, auroc:53.7 , loss:5.877
+Epoch 640 | tst f1:42.2, accuracy:55.0, aupr: 38.5, auroc:54.7 | trn f1:40.6, accuracy:55.0, aupr: 38.9, auroc:54.7 , loss:5.102
+Epoch 768 | tst f1:41.8, accuracy:54.5, aupr: 35.9, auroc:54.2 | trn f1:40.5, accuracy:55.9, aupr: 34.1, auroc:54.7 , loss:1.181
+Epoch 896 | tst f1:42.5, accuracy:55.2, aupr: 36.0, auroc:54.5 | trn f1:41.3, accuracy:55.6, aupr: 34.2, auroc:55.3 , loss:0.863
+Epoch 1024 | tst f1:42.2, accuracy:55.0, aupr: 35.6, auroc:54.0 | trn f1:40.0, accuracy:55.5, aupr: 33.2, auroc:54.7 , loss:0.693
+Running for CADRE with pretrain with dropout: 0.8 and learning rate: 0.3
+Training...
+Epoch 0 | tst f1:40.6, accuracy:49.4, aupr: 41.2, auroc:49.9 | trn f1:43.7, accuracy:49.5, aupr: 43.6, auroc:50.2 , loss:8.285
+Epoch 128 | tst f1:40.9, accuracy:50.3, aupr: 40.8, auroc:50.9 | trn f1:39.8, accuracy:49.4, aupr: 39.9, auroc:50.0 , loss:8.297
+Epoch 256 | tst f1:42.8, accuracy:53.8, aupr: 41.7, auroc:54.4 | trn f1:39.8, accuracy:52.1, aupr: 38.3, auroc:52.8 , loss:6.589
+Epoch 384 | tst f1:43.6, accuracy:56.2, aupr: 37.9, auroc:55.3 | trn f1:40.4, accuracy:55.5, aupr: 35.2, auroc:55.8 , loss:3.594
+Epoch 512 | tst f1:12.5, accuracy:65.0, aupr: 37.1, auroc:51.0 | trn f1:33.3, accuracy:63.5, aupr: 33.5, auroc:54.0 , loss:0.693
+Epoch 640 | tst f1:7.3, accuracy:65.4, aupr: 36.3, auroc:50.7 | trn f1:11.0, accuracy:67.5, aupr: 35.2, auroc:51.1 , loss:0.811
+Epoch 768 | tst f1:9.3, accuracy:65.6, aupr: 38.5, auroc:51.1 | trn f1:10.3, accuracy:69.6, aupr: 34.9, auroc:51.3 , loss:0.793
+Epoch 896 | tst f1:10.3, accuracy:65.5, aupr: 38.3, auroc:51.2 | trn f1:12.3, accuracy:68.0, aupr: 35.8, auroc:51.5 , loss:0.788
+Epoch 1024 | tst f1:10.2, accuracy:65.4, aupr: 37.6, auroc:51.1 | trn f1:12.5, accuracy:68.6, aupr: 36.8, auroc:51.8 , loss:0.745
+Running for CADRE with pretrain with dropout: 0.8 and learning rate: 0.5
+Training...
+Epoch 0 | tst f1:40.8, accuracy:51.3, aupr: 41.2, auroc:51.1 | trn f1:38.4, accuracy:50.4, aupr: 39.5, auroc:49.8 , loss:8.868
+Epoch 128 | tst f1:41.1, accuracy:52.8, aupr: 40.9, auroc:52.5 | trn f1:39.0, accuracy:51.9, aupr: 39.2, auroc:51.9 , loss:7.870
+Epoch 256 | tst f1:44.3, accuracy:57.9, aupr: 43.5, auroc:57.9 | trn f1:40.5, accuracy:56.0, aupr: 39.1, auroc:56.6 , loss:5.662
+Epoch 384 | tst f1:2.2, accuracy:66.0, aupr: 37.6, auroc:50.4 | trn f1:39.3, accuracy:62.4, aupr: 38.1, auroc:57.0 , loss:1.375
+Epoch 512 | tst f1:0.4, accuracy:65.9, aupr: 26.2, auroc:50.2 | trn f1:2.0, accuracy:70.5, aupr: 30.0, auroc:50.6 , loss:0.789
+Epoch 640 | tst f1:0.5, accuracy:65.9, aupr: 26.7, auroc:50.2 | trn f1:1.5, accuracy:68.2, aupr: 36.7, auroc:50.4 , loss:0.753
+Epoch 768 | tst f1:0.4, accuracy:65.9, aupr: 26.6, auroc:50.2 | trn f1:2.3, accuracy:69.8, aupr: 34.4, auroc:50.6 , loss:0.767
+Epoch 896 | tst f1:0.5, accuracy:65.9, aupr: 26.6, auroc:50.2 | trn f1:1.8, accuracy:70.6, aupr: 35.8, auroc:50.5 , loss:0.738
+Epoch 1024 | tst f1:0.5, accuracy:65.9, aupr: 27.5, auroc:50.2 | trn f1:0.4, accuracy:69.5, aupr: 23.1, auroc:50.2 , loss:0.716
+
+
+Test Ablation
+Running for Collaborative Filtering with dropout: 0.4 and learning rate: 0.5
+Training...
+Epoch 0 | tst f1:38.5, accuracy:49.5, aupr: 33.3, auroc:48.4 | trn f1:29.7, accuracy:48.1, aupr: 23.1, auroc:45.4 , loss:0.916
+Epoch 128 | tst f1:38.3, accuracy:49.7, aupr: 33.4, auroc:48.6 | trn f1:36.2, accuracy:48.2, aupr: 30.7, auroc:46.4 , loss:0.930
+Epoch 256 | tst f1:39.2, accuracy:50.9, aupr: 34.2, auroc:49.8 | trn f1:33.8, accuracy:49.6, aupr: 27.6, auroc:47.4 , loss:0.898
+Epoch 384 | tst f1:39.9, accuracy:52.5, aupr: 35.5, auroc:51.6 | trn f1:36.5, accuracy:51.0, aupr: 30.9, auroc:49.5 , loss:0.860
+Epoch 512 | tst f1:40.9, accuracy:54.0, aupr: 36.9, auroc:53.4 | trn f1:35.6, accuracy:53.4, aupr: 29.7, auroc:51.9 , loss:0.810
+Epoch 640 | tst f1:40.7, accuracy:54.9, aupr: 37.9, auroc:54.2 | trn f1:39.4, accuracy:55.0, aupr: 34.5, auroc:53.9 , loss:0.780
+Epoch 768 | tst f1:42.4, accuracy:56.6, aupr: 39.1, auroc:56.2 | trn f1:41.6, accuracy:55.7, aupr: 37.9, auroc:55.5 , loss:0.761
+Epoch 896 | tst f1:42.6, accuracy:56.9, aupr: 39.9, auroc:56.8 | trn f1:40.7, accuracy:57.1, aupr: 36.5, auroc:57.0 , loss:0.736
+Epoch 1024 | tst f1:43.1, accuracy:57.5, aupr: 40.4, auroc:57.3 | trn f1:40.7, accuracy:57.7, aupr: 36.4, auroc:57.2 , loss:0.731
+Running for SADRE with dropout: 0.4 and learning rate: 0.5
+Training...
+Epoch 0 | tst f1:41.3, accuracy:52.8, aupr: 35.0, auroc:52.1 | trn f1:35.2, accuracy:55.0, aupr: 25.2, auroc:53.8 , loss:0.870
+Epoch 128 | tst f1:41.6, accuracy:53.2, aupr: 35.6, auroc:53.0 | trn f1:36.1, accuracy:52.4, aupr: 28.7, auroc:51.7 , loss:0.879
+Epoch 256 | tst f1:41.9, accuracy:54.0, aupr: 36.3, auroc:53.7 | trn f1:38.3, accuracy:53.2, aupr: 31.7, auroc:52.9 , loss:0.856
+Epoch 384 | tst f1:42.4, accuracy:55.2, aupr: 37.5, auroc:55.1 | trn f1:40.6, accuracy:55.3, aupr: 34.5, auroc:55.1 , loss:0.812
+Epoch 512 | tst f1:43.5, accuracy:56.8, aupr: 39.2, auroc:56.9 | trn f1:41.0, accuracy:56.8, aupr: 35.0, auroc:56.9 , loss:0.777
+Epoch 640 | tst f1:43.9, accuracy:57.5, aupr: 40.1, auroc:57.9 | trn f1:43.9, accuracy:58.1, aupr: 39.4, auroc:58.5 , loss:0.751
+Epoch 768 | tst f1:45.0, accuracy:58.7, aupr: 41.1, auroc:59.1 | trn f1:42.0, accuracy:59.5, aupr: 36.6, auroc:60.1 , loss:0.722
+Epoch 896 | tst f1:44.5, accuracy:58.9, aupr: 41.5, auroc:59.2 | trn f1:44.2, accuracy:59.8, aupr: 40.3, auroc:60.5 , loss:0.716
+Epoch 1024 | tst f1:45.3, accuracy:59.4, aupr: 42.3, auroc:59.8 | trn f1:45.2, accuracy:60.9, aupr: 41.5, auroc:61.9 , loss:0.700
+Running for CADRE w/o pretrain with dropout: 0.4 and learning rate: 0.5
+Training...
+Epoch 0 | tst f1:40.0, accuracy:50.9, aupr: 34.1, auroc:50.3 | trn f1:33.0, accuracy:51.1, aupr: 25.0, auroc:49.6 , loss:1.587
+Epoch 128 | tst f1:49.1, accuracy:63.3, aupr: 48.1, auroc:64.6 | trn f1:43.6, accuracy:58.5, aupr: 38.6, auroc:59.3 , loss:1.198
+Epoch 256 | tst f1:50.9, accuracy:67.3, aupr: 52.3, auroc:68.0 | trn f1:50.3, accuracy:67.5, aupr: 49.7, auroc:69.4 , loss:0.879
+Epoch 384 | tst f1:50.7, accuracy:67.4, aupr: 52.6, auroc:68.1 | trn f1:52.8, accuracy:71.2, aupr: 52.9, auroc:73.0 , loss:0.788
+Epoch 512 | tst f1:50.9, accuracy:65.7, aupr: 51.0, auroc:67.2 | trn f1:52.6, accuracy:69.7, aupr: 53.1, auroc:71.3 , loss:0.825
+Epoch 640 | tst f1:53.9, accuracy:69.0, aupr: 55.6, auroc:71.0 | trn f1:56.2, accuracy:72.5, aupr: 58.4, auroc:74.6 , loss:0.743
+Epoch 768 | tst f1:53.2, accuracy:68.9, aupr: 55.3, auroc:70.8 | trn f1:56.9, accuracy:72.5, aupr: 58.8, auroc:75.2 , loss:0.715
+Epoch 896 | tst f1:53.0, accuracy:70.0, aupr: 56.8, auroc:71.7 | trn f1:56.5, accuracy:73.9, aupr: 58.3, auroc:76.6 , loss:0.661
+Epoch 1024 | tst f1:53.9, accuracy:70.3, aupr: 57.1, auroc:72.0 | trn f1:57.7, accuracy:74.4, aupr: 60.4, auroc:76.7 , loss:0.658
+Running for CADRE with pretrain with dropout: 0.4 and learning rate: 0.5
+Training...
+Epoch 0 | tst f1:38.4, accuracy:48.4, aupr: 34.3, auroc:47.3 | trn f1:27.9, accuracy:49.2, aupr: 22.3, auroc:47.8 , loss:5.005
+Epoch 128 | tst f1:39.0, accuracy:51.1, aupr: 34.0, auroc:49.9 | trn f1:35.0, accuracy:49.6, aupr: 30.0, auroc:48.2 , loss:4.691
+Epoch 256 | tst f1:42.4, accuracy:54.9, aupr: 37.6, auroc:54.2 | trn f1:39.5, accuracy:54.5, aupr: 31.3, auroc:52.9 , loss:1.253
+Epoch 384 | tst f1:29.3, accuracy:62.1, aupr: 38.1, auroc:53.6 | trn f1:37.6, accuracy:59.5, aupr: 34.7, auroc:55.0 , loss:0.693
+Epoch 512 | tst f1:21.7, accuracy:63.5, aupr: 38.0, auroc:52.7 | trn f1:25.9, accuracy:66.6, aupr: 37.5, auroc:54.1 , loss:0.693
+Epoch 640 | tst f1:25.0, accuracy:63.0, aupr: 37.9, auroc:53.0 | trn f1:23.1, accuracy:66.3, aupr: 36.7, auroc:53.5 , loss:0.693
+Epoch 768 | tst f1:28.2, accuracy:62.6, aupr: 38.3, auroc:53.6 | trn f1:27.3, accuracy:65.5, aupr: 37.0, auroc:53.8 , loss:0.693
+Epoch 896 | tst f1:29.1, accuracy:62.1, aupr: 38.0, auroc:53.7 | trn f1:29.6, accuracy:67.0, aupr: 35.5, auroc:54.9 , loss:0.693
+Epoch 1024 | tst f1:30.4, accuracy:62.4, aupr: 38.6, auroc:54.0 | trn f1:30.9, accuracy:66.4, aupr: 35.8, auroc:55.0 , loss:0.693
